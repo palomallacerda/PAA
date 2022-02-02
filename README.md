@@ -1,3 +1,3 @@
 # Some algorithms related to PAA 
 
-## Fourth semester's discipline ministraded at the Federal University of Alagoas
+## Fourth semester's discipline taught at the Federal University of Alagoas
