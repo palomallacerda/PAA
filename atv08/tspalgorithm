@@ -1,0 +1,15 @@
+repeat until no improvement is made {
+    best_distance = calculateTotalDistance(existing_route)
+    start_again:
+    for (i = 0; i <= number of nodes eligible to be swapped - 1; i++) {
+        for (k = i + 1; k <= number of nodes eligible to be swapped; k++) {
+            new_route = 2optSwap(existing_route, i, k)
+            new_distance = calculateTotalDistance(new_route)
+            if (new_distance < best_distance) {
+                existing_route = new_route
+                best_distance = new_distance
+                goto start_again
+            }
+        }
+    }
+}
